@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker - History</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div id="app-container" class="container container-wide glass-panel">
+        <header>
+            <h1>Expense Tracker</h1>
+            <p>History & AI Analysis</p>
+        </header>
+
+        <nav class="app-nav">
+            <div class="nav-group">
+                <button id="nav-dashboard" class="nav-btn"><i class="fa-solid fa-wallet"></i> Dashboard</button>
+                <button id="nav-history" class="nav-btn active"><i class="fa-solid fa-clock-rotate-left"></i> History & AI</button>
+            </div>
+            <button id="nav-logout" class="nav-btn logout-btn" title="Logout"><i class="fa-solid fa-right-from-bracket"></i></button>
+        </nav>
+
+        <div id="history-view">
+            <section class="transactions-section">
+                <h3>Recent Transactions</h3>
+                <ul id="list" class="list">
+                </ul>
+            </section>
+
+            <section class="ai-advisor-section">
+                <h3><i class="fa-solid fa-wand-magic-sparkles"></i> AI Financial Advisor</h3>
+                <div class="ai-advice-container">
+                    <p id="ai-advice-text">Add some transactions to get personalized financial advice.</p>
+                </div>
+                <button id="analyze-btn" type="button" class="btn secondary-btn"><i class="fa-solid fa-brain"></i> Get AI Insights</button>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

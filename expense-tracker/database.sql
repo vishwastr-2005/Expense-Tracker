@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS expensetracker;
+USE expensetracker;
+
+CREATE TABLE IF NOT EXISTS transactions (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    text VARCHAR(255) NOT NULL,
+    amount DECIMAL(10, 2) NOT NULL,
+    icon VARCHAR(100),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
