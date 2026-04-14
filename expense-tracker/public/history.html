@@ -32,7 +32,16 @@
             </div>
             <button id="nav-logout" class="nav-btn logout-btn" title="Logout"><i class="fa-solid fa-right-from-bracket"></i></button>
         </nav>
-
+        
+        <div style="display:flex; gap:10px; margin-bottom:15px;">
+            <select id="month-filter" style="background:rgba(0,0,0,0.2); color:var(--text-main); padding:8px; border-radius:8px;">
+                <option value="all">All Months</option>
+            </select>
+            <select id="year-filter" style="background:rgba(0,0,0,0.2); color:var(--text-main); padding:8px; border-radius:8px;">
+                <option value="all">All Years</option>
+            </select>
+        </div>
+        
         <div id="history-view">
             <section class="transactions-section">
                 <h3>Recent Transactions</h3>
